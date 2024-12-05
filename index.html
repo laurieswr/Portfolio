@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Laurie Serwier</h1>
+        <div class="social-links">
+            <a href="https://github.com/laurieswr">
+                <img src="./githubimg.png" alt="GitHub Profile" width="50px">
+            </a>
+            <a href="https://www.linkedin.com/in/laurie-swr-b232b1317/">
+                <img src="./linkedin.jpg" alt="LinkedIn Profile" width="50px">
+            </a>
+        </div>
+    </header>
+    <main>
+        <section id="presentations">
+            <h2>Presentations</h2>
+            <p>
+                Hello, my name is Laurie Serwier. I am a web developer. I have been learning web development through a three-month program at Bruxelles Formation and a one-year program at Interface3.
+            </p>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <ul>
+                <li>Project 1</li>
+                <li>Project 2</li>
+                <li>Project 3</li>
+            </ul>
+        </section>
+        <section id="contacts">
+            <h2>Contact Me</h2>
+            <form method="post" action="http://localhost:8000/send-email">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="jean@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send</button>
+            </form>            
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Laurie Serwier - All Rights Reserved</p>
+    </footer>
+</body>
+</html>

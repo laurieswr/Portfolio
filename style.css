@@ -1,0 +1,183 @@
+/* body {
+    background-color: rgb(101, 149, 190);
+}
+
+h1 {
+    font-size: 60px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#presentations {
+    width: 80%;
+    height: 50%;
+    background-color:bisque;
+
+    margin: 20px;
+
+    h2 {
+        font-size: 40px;
+    }
+    div {
+        font-size: 25px;
+    }
+}
+
+#projects {
+    width: 80%;
+    height: 50%;
+    background-color:cadetblue;
+
+    margin: 20px;
+
+    h2 {
+        font-size: 40px;
+    }
+    div {
+        font-size: 25px;
+    }
+}
+
+#contacts {
+    width: 80%;
+    height: 50%;
+    background-color:darkgrey;
+
+    margin: 20px;
+
+    h2 {
+        font-size: 40px;
+    }
+    div {
+        font-size: 25px;
+    }
+} */
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(101, 149, 190);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header .social-links img {
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+header .social-links img:hover {
+    transform: scale(1.2);
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #007BFF;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+p, ul {
+    font-size: 1rem;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+textarea {
+    resize: none;
+}
+
+button.btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+button.btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+}
