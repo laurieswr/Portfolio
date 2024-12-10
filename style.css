@@ -1,68 +1,3 @@
-/* body {
-    background-color: rgb(101, 149, 190);
-}
-
-h1 {
-    font-size: 60px;
-}
-
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#presentations {
-    width: 80%;
-    height: 50%;
-    background-color:bisque;
-
-    margin: 20px;
-
-    h2 {
-        font-size: 40px;
-    }
-    div {
-        font-size: 25px;
-    }
-}
-
-#projects {
-    width: 80%;
-    height: 50%;
-    background-color:cadetblue;
-
-    margin: 20px;
-
-    h2 {
-        font-size: 40px;
-    }
-    div {
-        font-size: 25px;
-    }
-}
-
-#contacts {
-    width: 80%;
-    height: 50%;
-    background-color:darkgrey;
-
-    margin: 20px;
-
-    h2 {
-        font-size: 40px;
-    }
-    div {
-        font-size: 25px;
-    }
-} */
-
 /* General Reset */
 * {
     margin: 0;
@@ -110,6 +45,7 @@ h2 {
 }
 
 section {
+    width: 100%;
     margin-bottom: 40px;
     padding: 20px;
     background: #ffffff;
