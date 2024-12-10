@@ -1,45 +1,52 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const nodemailer = require("nodemailer");
-
+const express = require('express');
+const nodemailer = require('nodemailer');
+const bodyParser = require('body-parser');
 const app = express();
-const PORT = 8000;
+const port = 8000;
 
-// Middleware pour analyser les données du formulaire
-app.use(bodyParser.urlencoded({ extended: false }));
+// Middleware pour parser le body du formulaire
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.post("/send-email", (req, res) => {
-    const { email, message } = req.body; // Récupère les champs "email" et "message"
+// Route pour traiter le formulaire
+app.post('/send-email', (req, res) => {
+    const { email, message } = req.body;
 
+    // Vérification si les champs sont présents
     if (!email || !message) {
-        return res.status(400).send("L'email et le message sont requis.");
+        return res.status(400).send('L\'email et le message sont obligatoires.');
     }
 
+    // Configuration du transporteur pour l'email
     const transporter = nodemailer.createTransport({
-        service: "gmail",
+        service: 'gmail',  // Si vous utilisez Gmail
         auth: {
-            user: {email}, // Votre adresse Gmail
-            pass: "gijw ivrs ftjv anzk", // Mot de passe ou App Password
-        },
+            user: 'votre-email@gmail.com',  // Remplacez par votre email
+            pass: 'votre-mot-de-passe'  // Remplacez par votre mot de passe ou un mot de passe d\'application
+        }
     });
 
+    // Paramètres de l'email
     const mailOptions = {
-        from: email, // L'email de l'utilisateur
-        to: "laurieswr7@gmail.com", // Votre adresse destinataire
-        subject: "Nouveau message depuis le formulaire",
-        text: `Vous avez reçu un message de : ${email}\n\nMessage : ${message}`,
+        from: email,  // Email de la personne qui soumet le formulaire
+        to: 'destinataire@example.com',  // Votre adresse email
+        subject: 'Nouveau message de ' + email,
+        text: message
     };
 
+    // Envoi de l'email
     transporter.sendMail(mailOptions, (error, info) => {
         if (error) {
-            console.error(error);
-            return res.status(500).send("Erreur lors de l'envoi de l'e-mail.");
+            console.error('Erreur lors de l\'envoi de l\'email:', error);
+            return res.status(500).send('Erreur interne du serveur. L\'email n\'a pas pu être envoyé.');
+        } else {
+            console.log('Email envoyé: ' + info.response);
+            res.send('Message envoyé avec succès!');
         }
-        res.status(200).send("E-mail envoyé avec succès !");
     });
 });
 
-app.listen(PORT, () => {
-    console.log(`Serveur démarré sur http://localhost:${PORT}`);
+// Lancer le serveur
+app.listen(port, () => {
+    console.log(`Serveur démarré sur http://localhost:${port}`);
 });
