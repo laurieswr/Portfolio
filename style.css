@@ -31,6 +31,9 @@ header .social-links img {
 
 header .social-links img:hover {
     transform: scale(1.2);
+}
+
+.social-links {
     text-decoration: none;
 }
 
