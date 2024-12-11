@@ -1,4 +1,4 @@
-/* General Reset */
+/* Général reset */
 * {
     margin: 0;
     padding: 0;
@@ -6,11 +6,15 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(101, 149, 190);
-    color: #333;
-    line-height: 1.6;
-    padding: 20px;
+    font-family: 'Georgia', serif; /* Police classique et élégante */
+    background-color: #0eebc6; /* Fond clair et raffiné */
+    color: #333; /* Texte sombre pour une lecture facile */
+    line-height: 1.8;
+    padding: 40px;
+    background-image: url('https://via.placeholder.com/1200x800'); /* Image de fond inspirée de la musique (p. ex. une partition musicale ou un orchestre) */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header {
@@ -19,50 +23,63 @@ header {
 }
 
 header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+    font-size: 3.5rem;
+    margin-bottom: 15px;
+    color: #8B4513; /* Couleur bois, rappelant l'élégance du violon ou des pianos en bois */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
 header .social-links img {
-    margin: 0 10px;
+    margin: 0 15px;
     border-radius: 50%;
+    width: 60px;
+    height: 60px;
     transition: transform 0.3s;
 }
 
 header .social-links img:hover {
-    transform: scale(1.2);
+    transform: scale(1.1); /* Agrandissement subtil au survol */
 }
 
-.social-links {
+.link {
     text-decoration: none;
+    color: inherit;
 }
 
 main {
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Fond clair pour le contenu principal */
+    padding: 30px;
+    border-radius: 15px;
+    backdrop-filter: blur(8px); /* Effet flou léger pour donner une sensation de profondeur */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Légère ombre portée */
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 15px;
-    color: #007BFF;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #8B4513;
+    text-align: center;
+    font-style: italic; /* Italique pour une touche sophistiquée */
 }
 
 section {
     width: 100%;
     margin-bottom: 40px;
-    padding: 20px;
-    background: #ffffff;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.7); /* Transparence douce */
     border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }
 
 p, ul {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 ul {
-    list-style-type: disc;
+    list-style-type: square; /* Style de liste élégant */
     margin-left: 20px;
 }
 
@@ -78,20 +95,21 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: #8B4513; /* Couleur bois pour les labels */
 }
 
 input, textarea {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 1rem;
     outline: none;
 }
 
 input:focus, textarea:focus {
-    border-color: #007BFF;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    border-color: #8B4513;
+    box-shadow: 0 0 5px rgba(139, 69, 19, 0.3); /* Accent doré et bois */
 }
 
 textarea {
@@ -100,24 +118,60 @@ textarea {
 
 button.btn {
     display: inline-block;
-    background-color: #007BFF;
+    background-color: #8B4513; /* Couleur bois pour le bouton */
     color: white;
-    padding: 10px 15px;
-    font-size: 1rem;
+    padding: 12px 20px;
+    font-size: 1.2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     text-align: center;
     transition: background-color 0.3s;
 }
 
 button.btn:hover {
-    background-color: #0056b3;
+    background-color: #5C4033; /* Changement de couleur au survol */
 }
 
 footer {
     text-align: center;
     margin-top: 40px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #666;
+}
+
+/* Ajout d'un fond en partition musicale (image de fond subtile) */
+body {
+    background-image: url('https://via.placeholder.com/1200x800'); /* Remplacer avec une image de partition musicale ou un orchestre */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    button.btn {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
 }
