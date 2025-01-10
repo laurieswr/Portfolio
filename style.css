@@ -12,7 +12,6 @@ body {
     color: #333; /* Texte sombre pour une lecture facile */
     line-height: 1.8;
     padding: 40px;
-    background-image: url('https://via.placeholder.com/1200x800'); /* Image de fond inspirée de la musique (p. ex. une partition musicale ou un orchestre) */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
