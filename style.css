@@ -151,6 +151,9 @@ body {
 @media (max-width: 768px) {
     body {
         padding: 20px;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
     }
 
     main {
