@@ -7,8 +7,8 @@
 }
 
 body {
-    font-family: 'Georgia', serif; /* Police classique et élégante */
     background-image: url('./music_symbols_blue_background_hd_music-1920x1080.jpg'); /* Fond clair et raffiné */
+    font-family: 'Georgia', serif; /* Police classique et élégante */
     color: #333; /* Texte sombre pour une lecture facile */
     line-height: 1.8;
     padding: 40px;
@@ -25,7 +25,7 @@ header {
 header h1 {
     font-size: 3.5rem;
     margin-bottom: 15px;
-    color: #8B4513; /* Couleur bois, rappelant l'élégance du violon ou des pianos en bois */
+    color: black; /* Couleur bois, rappelant l'élégance du violon ou des pianos en bois */
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -49,11 +49,11 @@ header .social-links img:hover {
 main {
     max-width: 960px;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.9); /* Fond clair pour le contenu principal */
+    /* background-color: rgba(255, 255, 255, 0.9); Fond clair pour le contenu principal */
     padding: 30px;
     border-radius: 15px;
-    backdrop-filter: blur(8px); /* Effet flou léger pour donner une sensation de profondeur */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Légère ombre portée */
+    /* backdrop-filter: blur(8px); Effet flou léger pour donner une sensation de profondeur */
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); Légère ombre portée */
 }
 
 h2 {
@@ -142,7 +142,6 @@ footer {
 
 /* Ajout d'un fond en partition musicale (image de fond subtile) */
 body {
-    background-image: url('https://via.placeholder.com/1200x800'); /* Remplacer avec une image de partition musicale ou un orchestre */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
