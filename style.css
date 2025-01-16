@@ -141,11 +141,11 @@ footer {
 }
 
 /* Ajout d'un fond en partition musicale (image de fond subtile) */
-body {
+/* body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
+} */
 
 /* Responsive */
 @media (max-width: 768px) {

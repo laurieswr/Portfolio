@@ -1,60 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio de Laurie Serwier</title>
     <link rel="stylesheet" href="style.css">
     <script src="code.js" defer></script>
+    <style>
+        .lang-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin: 10px 20px;
+        }
+
+        .lang-buttons button {
+            margin-left: 10px;
+            padding: 5px 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+    <div class="lang-buttons">
+        <button onclick="setLanguage('fr')">Français</button>
+        <button onclick="setLanguage('en')">English</button>
+    </div>
     <header>
         <h1>Laurie Serwier</h1>
     </header>
     <main>
         <section id="presentations">
-            <h2>Presentations</h2>
+            <h2>Présentation</h2>
             <p>
-                Hello, my name is Laurie Serwier. I am a web developer. I have been learning web development through a three-month program at Bruxelles Formation and a one-year program at Interface3. I speak French and little English.
+                Bonjour, je m'appelle Laurie Serwier. Je suis développeuse web. J'ai appris le développement web à travers un programme de trois mois chez Bruxelles Formation et un programme d'un an chez Interface3. Je parle français et un peu anglais.
             </p>
             <p>
-                I play the violin and cello. The violin since 20 years and the cello since 3 years.
+                Je joue du violon et du violoncelle. Le violon depuis 20 ans et le violoncelle depuis 3 ans.
             </p>
         </section>
         <section id="projects">
-            <h2>My Projects</h2>
+            <h2>Mes Projets</h2>
             <ul>
-                <li>Christmas Planners (React): <a href="https://laurieswr.github.io/accueil">Christmas Planners</a></li>
-                <li>Hackaton: <a href="https://hackathon24.interface3.be/techortrees/">Hackaton</a></li>
-                <li>Violoncelle </li>
+                <li>Christmas Planners (React) : <a href="https://portfolio-laurieswr.netlify.app/">Christmas Planners</a></li>
+                <li>Violoncelle</li>
             </ul>
         </section>
        
         <section id="contacts">
-            <h2>Contact Me</h2>
+            <h2>Contactez-moi</h2>
             <form method="post" action="http://localhost:8000/send-email">
                 <div class="form-group">
-                    <label for="email">Email:</label>
+                    <label for="email">Email :</label>
                     <input type="email" id="email" name="email" placeholder="jean@gmail.com" required>
                 </div>
                 <div class="form-group">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" placeholder="Your message" rows="5" required></textarea>
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
                 </div>
-                <button type="submit" class="btn">Send</button>
+                <button type="submit" class="btn">Envoyer</button>
             </form>            
         </section>
     </main>
     <footer>
         <div class="social-links">
             <a href="https://github.com/laurieswr" class="link">
-                <img src="./githubimg.png" alt="GitHub Profile" width="50px">
+                <img src="./githubimg.png" alt="Profil GitHub" width="50px">
             </a>
             <a href="https://www.linkedin.com/in/laurie-swr-b232b1317/" class="link">
-                <img src="./linkedin.jpg" alt="LinkedIn Profile" width="50px">
+                <img src="./linkedin.jpg" alt="Profil LinkedIn" width="50px">
             </a>
         </div>
-        <p>© 2024 Laurie Serwier - All Rights Reserved</p>
+        <p>© 2024 Laurie Serwier - Tous droits réservés</p>
     </footer>
+
+    <script src="code-fren.js"></script>
 </body>
 </html>
