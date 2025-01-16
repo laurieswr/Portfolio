@@ -68,7 +68,7 @@ section {
     width: 100%;
     margin-bottom: 40px;
     padding: 30px;
-    background: rgba(255, 255, 255, 0.7); /* Transparence douce */
+    background: rgba(255, 255, 255, 0.9); /* Transparence douce */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
 }

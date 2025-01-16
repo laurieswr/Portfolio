@@ -2,7 +2,7 @@ const content = {
     fr: {
         presentations: {
             title: "Présentation",
-            text1: "Bonjour, je m'appelle Laurie Serwier. Je suis développeuse web. J'ai appris le développement web à travers un programme de trois mois chez Bruxelles Formation et un programme d'un an chez Interface3. Je parle français et un peu anglais.",
+            text1: "Bonjour, je m'appelle Laurie. Je suis frontend developer junior. J'ai appris le développement web à travers un programme de trois mois chez Bruxelles Formation et un programme d'un an chez Interface3. Je parle français et un peu anglais.",
             text2: "Je joue du violon et du violoncelle. Le violon depuis 20 ans et le violoncelle depuis 3 ans."
         },
         projects: {
@@ -21,8 +21,8 @@ const content = {
     },
     en: {
         presentations: {
-            title: "Presentations",
-            text1: "Hello, my name is Laurie Serwier. I am a web developer. I have been learning web development through a three-month program at Bruxelles Formation and a one-year program at Interface3. I speak French and little English.",
+            title: "Presentation",
+            text1: "Hello, my name is Laurie. I am a frontend developer junior. I have been learning web development through a three-month program at Bruxelles Formation and a one-year program at Interface3. I speak French and little English.",
             text2: "I play the violin and cello. The violin since 20 years and the cello since 3 years."
         },
         projects: {
