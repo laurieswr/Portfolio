@@ -21,7 +21,7 @@ const content = {
     },
     en: {
         presentations: {
-            title: "Presentation",
+            title: "Présentation",
             text1: "Hello, my name is Laurie. I am a frontend developer junior. I have been learning web development through a three-month program at Bruxelles Formation and a one-year program at Interface3. I speak French and little bit ofEnglish.",
             text2: "I play the violin and cello. The violin since 20 years and cello since 3 years."
         },
