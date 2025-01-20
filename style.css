@@ -192,6 +192,10 @@ footer {
     }
 }
 
+footer p {
+    color: burlywood;
+}
+
 /* Ajout d'un fond en partition musicale (image de fond subtile) */
 /* body {
     background-size: cover;
