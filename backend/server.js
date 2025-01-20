@@ -29,7 +29,7 @@ app.post('/send-email', (req, res) => {
     // Paramètres de l'email
     const mailOptions = {
         from: email,  // Email de la personne qui soumet le formulaire
-        to: 'laurieswr7@gmail.com',  // Votre adresse email
+        to: 'sewelllau99@gmail.com',  // Votre adresse email
         subject: 'Nouveau message de ' + email,
         text: message
     };
