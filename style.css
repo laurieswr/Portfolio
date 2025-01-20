@@ -140,6 +140,58 @@ footer {
     color: #666;
 }
 
+.skills {
+    max-width: 600px;
+    margin: auto;
+}
+
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill-name {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+}
+
+.skill-bar-fill {
+    background-color: #6c63ff;
+    height: 100%;
+    width: 0;
+    text-align: right;
+    line-height: 20px;
+    padding-right: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px 0 0 20px;
+}
+
+/* Animation pour le remplissage */
+.skill-bar-fill[data-percentage]:after {
+    content: attr(data-percentage) '%';
+}
+
+.skill-bar-fill {
+    animation: fill-bar 2s ease-out forwards;
+}
+
+@keyframes fill-bar {
+    from {
+        width: 0;
+    }
+    to {
+        width: var(--percentage);
+    }
+}
+
 /* Ajout d'un fond en partition musicale (image de fond subtile) */
 /* body {
     background-size: cover;
